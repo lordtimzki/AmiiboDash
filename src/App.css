@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #12196a;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+}
+
+.sidebar h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+ul {
+  margin-top: 50px;
+  padding-left: 45px;
+  text-align: left;
+}
+
+li {
+  list-style: none;
+  font-size: larger;
+  margin-bottom: 15px;
+}
+
+li a {
+  color: white;
+  cursor: pointer;
+}
+
+.summarybox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #12196a;
+  width: calc(33.33% - 14px);
+  min-width: 250px;
+  height: 150px;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  background-color: #12196a;
+  border-radius: 24px;
+  padding: 20px;
+  color: white;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table th {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.amiiboImg {
+  width: 40px;
+  height: auto;
+}
+
+.mostAmiibos,
+.amiiboGames {
+  text-align: center;
+}
