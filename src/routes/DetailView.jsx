@@ -18,10 +18,16 @@ const DetailView = ({ amiiboData }) => {
     <div style={{ color: "black" }}>
       <h1>Detail View</h1>
       <p>Amiibo ID: {id}</p>
+      <p>Full Name: {amiibo.name}</p>
+      <p>Type: {amiibo.type}</p>
       <p>Character: {amiibo.character}</p>
       <p>Amiibo Series: {amiibo.amiiboSeries}</p>
       <p>Game Series: {amiibo.gameSeries}</p>
-      <p>Release Date: {amiibo.release?.na || "N/A"}</p>
+      <p>Release Dates:</p>
+      <p>NA: {amiibo.release.na}</p>
+      <p>JP: {amiibo.release.jp}</p>
+      <p>EU: {amiibo.release.eu}</p>
+      <p>AU: {amiibo.release.au}</p>
       <img src={amiibo.image} alt={`${amiibo.character} Amiibo`} />
     </div>
   );
