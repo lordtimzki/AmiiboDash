@@ -56,16 +56,13 @@ function App() {
       seriesCounts[series] += 1;
     });
 
-    // Convert to array for recharts
     const seriesData = Object.entries(seriesCounts).map(([name, value]) => ({
       name,
       value,
     }));
 
-    // Sort by count in descending order
     seriesData.sort((a, b) => b.value - a.value);
 
-    // Get top 8 series and group the rest as "Others"
     let distributionData = seriesData.slice(0, 8);
 
     if (seriesData.length > 8) {
